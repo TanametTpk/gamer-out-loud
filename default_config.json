@@ -1,0 +1,74 @@
+{
+    "voice_reg": [
+        {
+            "key": "1",
+            "name": "hello",
+            "when": ["สวัสดี"],
+            "do": "say",
+            "action": "hello"
+        },
+        {
+            "key": "2",
+            "name": "reload",
+            "when": ["reload"],
+            "do": "press",
+            "action": "r"
+        },
+        {
+            "key": "3",
+            "name": "map",
+            "when": ["map"],
+            "do": "press",
+            "action": "m"
+        },
+        {
+            "key": "4",
+            "name": "เก็บ",
+            "when": ["เก็บ","เปิด"],
+            "do": "press",
+            "action": "f"
+        },
+        {
+            "key": "5",
+            "name": "กระเป๋า",
+            "when": ["กระเป๋า", "backpack"],
+            "do": "press",
+            "action": "b"
+        },
+        {
+            "key": "6",
+            "name": "จบ",
+            "when": ["จบ"],
+            "do": "end",
+            "action": ""
+        },
+        {
+            "key": "7",
+            "name": "restart",
+            "when": ["restart"],
+            "do": "reload",
+            "action": ""
+        }
+    ],
+
+    "volume": [
+        {
+            "when": {
+                "volMoreThan": 100,
+                "volLessThan": 200,
+                "press": "space"
+            },
+            "do": "double-press",
+            "action": "space"
+        }
+    ],
+
+    "volume-config": {
+        "volLoud": 350,
+        "ifLoud": {
+            "do": "press",
+            "action": "q"
+        },
+        "volMouseDown": 100
+    }
+}

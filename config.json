@@ -1,0 +1,97 @@
+{
+    "voice_reg": [
+        {
+            "key": "2",
+            "name": "reload",
+            "when": [
+                "reload"
+            ],
+            "do": "press",
+            "action": "r"
+        },
+        {
+            "key": "3",
+            "name": "map",
+            "when": [
+                "map"
+            ],
+            "do": "press",
+            "action": "m"
+        },
+        {
+            "key": "4",
+            "name": "\u0e40\u0e01\u0e47\u0e1a",
+            "when": [
+                "\u0e40\u0e01\u0e47\u0e1a",
+                "\u0e40\u0e1b\u0e34\u0e14"
+            ],
+            "do": "press",
+            "action": "f"
+        },
+        {
+            "key": "5",
+            "name": "\u0e01\u0e23\u0e30\u0e40\u0e1b\u0e4b\u0e32",
+            "when": [
+                "\u0e01\u0e23\u0e30\u0e40\u0e1b\u0e4b\u0e32",
+                "backpack"
+            ],
+            "do": "press",
+            "action": "b"
+        },
+        {
+            "key": "6",
+            "name": "\u0e08\u0e1a",
+            "when": [
+                "\u0e08\u0e1a"
+            ],
+            "do": "end",
+            "action": ""
+        },
+        {
+            "key": "7",
+            "name": "restart",
+            "when": [
+                "restart"
+            ],
+            "do": "reload",
+            "action": ""
+        },
+        {
+            "key": "0.7170442094076535",
+            "name": "test",
+            "when": [
+                "test"
+            ],
+            "do": "press",
+            "action": "t"
+        },
+        {
+            "key": "0.5790093491153525",
+            "name": "delete",
+            "when": [
+                "\u0e25\u0e1a"
+            ],
+            "do": "press",
+            "action": "Backspace"
+        }
+    ],
+    "volume": [
+        {
+            "when": {
+                "volMoreThan": 100,
+                "volLessThan": 200,
+                "press": "space"
+            },
+            "do": "double-press",
+            "action": "space"
+        }
+    ],
+    "volume-config": {
+        "volLoud": 350,
+        "ifLoud": {
+            "do": "press",
+            "action": "q"
+        },
+        "volMouseDown": 100
+    }
+}
